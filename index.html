@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controllable 3D Dance Generation using Diffusion-based Transformer U-Net</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,16 +37,18 @@
         }
         .links a {
             text-decoration: none;
-            color: #2c82c9;
+            color: white;
             font-weight: bold;
             padding: 0.5rem 1rem;
-            border: 2px solid #2c82c9;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #2c82c9;
         }
         .links a:hover {
-            background-color: #2c82c9;
-            color: white;
+            background-color: #1a5b8a;
         }
         section {
             margin: 2rem 0;
@@ -90,24 +93,28 @@
             font-size: 0.9rem;
             color: #777;
         }
+        .author-superscript {
+            font-size: 0.8rem;
+            vertical-align: super;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Controllable 3D Dance Generation using Diffusion-based Transformer U-Net</h1>
         <div class="authors">
-            <a href="AUTHOR_1_LINK" target="_blank">Puyuan Guo</a>, 
-            <a href="AUTHOR_2_LINK" target="_blank">Tuo Hao</a>, 
-            <a href="AUTHOR_3_LINK" target="_blank">Wenxin Fu</a>,<br>
-            <a href="AUTHOR_4_LINK" target="_blank">Yingming Gao</a>, 
-            <a href="AUTHOR_5_LINK" target="_blank">Ya Li</a>
+            <a href="AUTHOR_1_LINK" target="_blank">Puyuan Guo<sup class="author-superscript">1</sup></a>, 
+            <a href="AUTHOR_2_LINK" target="_blank">Tuo Hao<sup class="author-superscript">2</sup></a>, 
+            <a href="AUTHOR_3_LINK" target="_blank">Wenxin Fu<sup class="author-superscript">3</sup></a>,<br>
+            <a href="AUTHOR_4_LINK" target="_blank">Yingming Gao<sup class="author-superscript">4</sup></a>, 
+            <a href="AUTHOR_5_LINK" target="_blank">Ya Li<sup class="author-superscript">*</sup></a>
             <div class="affiliations">
                 BUPT / AI4AI
             </div>
         </div>
         <div class="links">
-            <a href="YOUR_PAPER_LINK" target="_blank">Paper</a>
-            <a href="YOUR_CODE_LINK" target="_blank">Code</a>
+            <a href="YOUR_PAPER_LINK" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            <a href="YOUR_CODE_LINK" target="_blank"><i class="fas fa-code"></i> Code</a>
         </div>
     </div>
 
