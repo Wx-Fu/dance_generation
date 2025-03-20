@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Paper Title - Project Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .authors {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+        .links a {
+            text-decoration: none;
+            color: #2c82c9;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 2px solid #2c82c9;
+            border-radius: 5px;
+        }
+        .links a:hover {
+            background-color: #2c82c9;
+            color: white;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        .model-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+        }
+        .examples {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .example-item {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .example-item img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Your Paper Title</h1>
+        <div class="authors">
+            Author Name<sup>1</sup>, Co-Author Name<sup>2</sup>
+            <div style="font-size: 0.9rem;">
+                <sup>1</sup>Affiliation 1<br>
+                <sup>2</sup>Affiliation 2
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="YOUR_PAPER_LINK" target="_blank">Paper</a>
+            <a href="YOUR_CODE_LINK" target="_blank">Code</a>
+        </div>
+    </div>
 
+    <section class="abstract">
+        <h2>Abstract</h2>
+        <p>
+            <!-- 在这里粘贴你的摘要 -->
+            [Your abstract text here. This should be a concise summary of your research...
+            Describe the problem, your approach, and main findings. Keep it to 150-200 words.]
+        </p>
+    </section>
+
+    <section class="model">
+        <h2>Model Architecture</h2>
+        <p>Description of your model structure and key components...</p>
+        <!-- 替换为你的模型结构图路径 -->
+        <img src="model_architecture.png" alt="Model Architecture" class="model-image">
+    </section>
+
+    <section class="demo">
+        <h2>Demo Examples</h2>
+        <div class="examples">
+            <div class="example-item">
+                <img src="example1.jpg" alt="Example 1">
+                <p>Example 1 description</p>
+            </div>
+            <div class="example-item">
+                <img src="example2.jpg" alt="Example 2">
+                <p>Example 2 description</p>
+            </div>
+            <!-- 添加更多示例 -->
+        </div>
+    </section>
+
+</body>
+</html>
