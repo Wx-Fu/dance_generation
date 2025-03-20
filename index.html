@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Paper Title - Project Demo</title>
+    <title>Controllable 3D Dance Generation using Diffusion-based Transformer U-Net</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,6 +19,13 @@
         .authors {
             font-size: 1.1rem;
             color: #666;
+            line-height: 1.8;
+            text-align: center;
+        }
+        .affiliations {
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            color: #777;
         }
         .links {
             display: flex;
@@ -78,27 +85,27 @@
 </head>
 <body>
     <div class="header">
-        <h1>Your Paper Title</h1>
+        <h1>Controllable 3D Dance Generation using Diffusion-based Transformer U-Net</h1>
         <div class="authors">
-            Author Name<sup>1</sup>, Co-Author Name<sup>2</sup>
-            <div style="font-size: 0.9rem;">
-                <sup>1</sup>Affiliation 1<br>
-                <sup>2</sup>Affiliation 2
+            Puyuan Guo, Tuo Hao, Wenxin Fu,<br>  <!-- 换行保持可读性 -->
+            Yingming Gao, Ya Li 
+            
+            <div class="affiliations">
+                BUPT / AI4AI <!-- 机构名称 -->
             </div>
         </div>
-        
+
         <div class="links">
             <a href="YOUR_PAPER_LINK" target="_blank">Paper</a>
             <a href="YOUR_CODE_LINK" target="_blank">Code</a>
         </div>
     </div>
+        
 
     <section class="abstract">
         <h2>Abstract</h2>
         <p>
-            <!-- 在这里粘贴你的摘要 -->
-            [Your abstract text here. This should be a concise summary of your research...
-            Describe the problem, your approach, and main findings. Keep it to 150-200 words.]
+            Recently, dance generation has attracted increasing interest. In particular, the success of diffusion models in image generation has led to the emergence of dance generation systems based on the diffusion framework. However, these systems lack controllability, which limits their practical applications. In this paper, we proposed a controllable dance generation method based on the diffusion model, which can generate 3D dance motions controlled by 2D keypoint sequences. Specifically, we design a transformer-based U-Net model to predict actual motions. Then, we fix the parameters of the U-Net model and train an additional control network, enabling the generated motions to be controlled by 2D keypoints. We conduct extensive experiments and compared our method with existing works on the widely used AIST++ dataset, demonstrating that our approach has certain advantages and controllablity. Moreover, we also test our model on in-the-wild videos and find that it is capable of generating dance movements similar to the motions in the videos as well.
         </p>
     </section>
 
